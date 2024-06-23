@@ -9,7 +9,7 @@
         data() {
             return{
                 textValue:""
-            }
+            };
         }
     }
 </script>
