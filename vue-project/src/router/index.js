@@ -21,7 +21,12 @@ const routes = [
     path: '/databinding',
     name: 'DataBinding',
     component: DataBinding
-  }
+  },
+  {
+    path: '/component/nested',
+    name: 'NestedComponent',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/NestedComponent.vue')
+  },
 ]
 
 const router = createRouter({
