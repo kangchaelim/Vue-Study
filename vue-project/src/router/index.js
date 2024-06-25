@@ -27,6 +27,31 @@ const routes = [
     name: 'NestedComponent',
     component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/NestedComponent.vue')
   },
+  {
+    path: '/component/parent1',
+    name: 'ParentComponent1',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/ParentComponent1.vue')
+  },
+  {
+    path: '/component/parent2',
+    name: 'ParentComponent2',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/ParentComponent2.vue')
+  },
+  {
+    path: '/component/parent3',
+    name: 'ParentComponent3',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/ParentComponent3.vue')
+  },
+  {
+    path: '/component/parent4',
+    name: 'ParentComponent4',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/ParentComponent4.vue')
+  },
+  {
+    path: '/component/parent5',
+    name: 'ParentComponent5',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/ParentComponent5.vue')
+  },
 ]
 
 const router = createRouter({
