@@ -52,6 +52,11 @@ const routes = [
     name: 'ParentComponent5',
     component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/component/ParentComponent5.vue')
   },
+  {
+    path: '/slot/SlotUseModalLayout',
+    name: 'SlotUseModalLayout',
+    component: () => import( /* webpackPrefetch: true, webpackChunkName: "provide" */ '../views/slot/SlotUseModalLayout.vue')
+  },
 ]
 
 const router = createRouter({
